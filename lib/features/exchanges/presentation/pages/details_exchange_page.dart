@@ -15,7 +15,6 @@ class DetailsExchangePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      //TODO: fetchAssets with exchangeId
       create: (_) =>
           DependencyService.resolve<ExchangeDetailsCubit>()
             ..fetchAssets(exchangeId: exchangeDetail.id),
